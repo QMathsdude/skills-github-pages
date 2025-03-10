@@ -1,6 +1,24 @@
-theme: minima
+# This was done
 
-title: My First Website (Github Pages)
-author: QMathsdude
-email: johndoe@gmail.com
-description: This is the description of the website.
+# Site settings
+title: "My Dark Mode Blog"
+description: "This is the description of dark mode website"
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Markdown/Syntax highlighting
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    theme: github_dark
+
+# Minima "skin" (optional)
+minima:
+  date_format: "%b %-d, %Y"
+  skin: dark  # Purely for documentation (no functional impact)

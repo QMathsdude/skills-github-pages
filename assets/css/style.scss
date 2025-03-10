@@ -1,15 +1,5 @@
 ---
 ---
 
-@import "minima"; // DeepSeek code for a dark mode webpage
-
-// Dark mode variables
-$background-color: #1a1a1a;    // Dark background
-$text-color: #e0e0e0;         // Light text
-$brand-color: #7fdbff;        // Accent color (e.g., links)
-$grey-color: #828282;         
-$grey-color-light: #c0c0c0;
-$grey-color-dark: #383838;
-$code-background-color: #2d2d2d; // Code block background
-$header-background-color: $grey-color-dark;
-$footer-background-color: $grey-color-dark;
+@import "minima";
+@import "minima/custom-styles"; // Load your dark mode styles

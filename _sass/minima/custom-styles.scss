@@ -15,6 +15,12 @@ body {
   color: var(--text-color) !important;
 }
 
+// Add this rule to fix inline code visibility
+code {
+  color: var(--text-color); // Force text color to match dark mode
+  background-color: var(--code-background);
+}
+
 // Override minima's hardcoded light-mode styles
 .site-title, .site-title:visited {
   color: var(--text-color) !important;

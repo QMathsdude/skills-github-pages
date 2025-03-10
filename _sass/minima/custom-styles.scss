@@ -1,21 +1,21 @@
 // _sass/minima/custom-styles.scss
 
-// Light mode (default)
+// Dark mode (default)
 :root {
-  --background-color: #ffffff;
-  --text-color: #333333;
-  --link-color: #2a7ae2;
-  --code-background: #f5f5f5;
-  --border-color: #e0e0e0;
+  --background-color: #1a1a1a;
+  --text-color: #e0e0e0;
+  --link-color: #7aa7f2;
+  --code-background: #2d2d2d;
+  --border-color: #404040;
 }
 
-// Dark mode
+// Light mode
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-color: #1a1a1a;
-    --text-color: #e0e0e0;
-    --link-color: #7aa7f2;
-    --code-background: #2d2d2d;
-    --border-color: #404040;
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --link-color: #2a7ae2;
+    --code-background: #f5f5f5;
+    --border-color: #e0e0e0;
   }
 }

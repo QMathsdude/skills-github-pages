@@ -20,8 +20,8 @@ dl, dd, ol, ul, figure {
  */
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-  color: $text-color;
-  background-color: $background-color;
+  color: var(--text-color);
+  background-color: var(--background-color);
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
      -moz-font-feature-settings: "kern" 1;
@@ -139,7 +139,7 @@ a {
  * Blockquotes
  */
 blockquote {
-  color: $brand-color;
+  color: var(--link-color);
   border-left: 4px solid $border-color-01;
   padding-left: $spacing-unit * .5;
   @include relative-font-size(1.125);
@@ -165,7 +165,7 @@ code {
   font-size: 0.9375em;
   border: 1px solid $border-color-01;
   border-radius: 3px;
-  background-color: $code-background-color;
+  background-color: var(--code-background);
 }
 
 code {
@@ -214,6 +214,13 @@ pre {
   content: "";
   display: table;
   clear: both;
+}
+
+/**
+ * Header and Footer
+ */
+.site-header, .site-footer {
+  border-color: var(--border-color);
 }
 
 

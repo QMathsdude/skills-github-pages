@@ -1,21 +1,29 @@
 // _sass/minima/custom-styles.scss
 
-// Light mode (default)
+// Dark mode (default)
 :root {
-  --background-color: #ffffff;
-  --text-color: #333333;
-  --link-color: #2a7ae2;
-  --code-background: #f5f5f5;
-  --border-color: #e0e0e0;
+  --background-color: #1a1a1a;
+  --text-color: #e0e0e0;
+  --link-color: #7aa7f2;
+  --code-background: #2d2d2d;
+  --border-color: #404040;
 }
 
-// Dark mode
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-color: #1a1a1a;
-    --text-color: #e0e0e0;
-    --link-color: #7aa7f2;
-    --code-background: #2d2d2d;
-    --border-color: #404040;
-  }
+// Optional: Force dark mode for all elements
+body {
+  background-color: var(--background-color) !important;
+  color: var(--text-color) !important;
+}
+
+// Override minima's hardcoded light-mode styles
+.site-title, .site-title:visited {
+  color: var(--text-color) !important;
+}
+
+.site-nav .page-link {
+  color: var(--text-color) !important;
+}
+
+.feed-subscribe .svg-icon {
+  fill: var(--text-color) !important;
 }

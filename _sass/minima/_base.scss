@@ -112,7 +112,7 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: $link-base-color;
+  color: var(--link-color);
   text-decoration: none;
 
   &:visited {
@@ -216,11 +216,14 @@ pre {
   clear: both;
 }
 
+
+
 /**
  * Header and Footer
  */
 .site-header, .site-footer {
   border-color: var(--border-color);
+
 }
 
 
